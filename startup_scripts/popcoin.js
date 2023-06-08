@@ -5,8 +5,13 @@ onEvent('item.registry', event => {
     event.create('popcorn')
         .displayName('Popcorn')
         .tooltip("Mmm popcorn.")
-        .useAnimation("eat" (food))
         .group('misc')
+        .food(food => {
+            food
+                .hunger(1)
+                .saturation(2)
+                .fastToEat()
+        })
 
     event.create('copper_popcoin')
         .displayName('Copper Popcoin')
@@ -24,7 +29,6 @@ onEvent('item.registry', event => {
         .displayName('Golden Popcoin')
         .tooltip("Slightly better than average popcoin.")
         .tooltip("§oThat golden butter sure tastes really good..")
-        .useAnimation('eat' (food))
         .group('misc')
         .food(food => {
             food
@@ -41,7 +45,6 @@ onEvent('item.registry', event => {
         .displayName('Manyullyn Popcoin')
         .tooltip("Godlike popcoin.")
         .tooltip("§oYou wonder what happens if you eat it..")
-        .useAnimation('eat' (food))
         .group('misc')
         .food(food => {
             food
