@@ -16,7 +16,7 @@ onEvent('item.registry', event => {
         .displayName('Silver Popcoin')
         .tooltip("Your average valuabe popcoin.")
         .group('misc')
-
+//test
 
     event.create('golden_popcoin')
         .displayName('Golden Popcoin')
