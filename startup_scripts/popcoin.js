@@ -39,7 +39,7 @@ onEvent('item.registry', event => {
                 .saturation(4)
                 .effect('farmersdelight:nourishment', 2600, 1 ,1)
                 .effect('health_boost', 1200 , 1 ,4)
-                .effect('regeneration' 360, 2, 1)
+                .effect('regeneration', 360, 2, 1)
                 .alwaysEdible()
         })
         .maxStackSize(32)
