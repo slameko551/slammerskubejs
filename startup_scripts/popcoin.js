@@ -48,7 +48,6 @@ onEvent('item.registry', event => {
                 .effect('alexsmobs:earthquake', 1, 1, 1)
                 .effect('slowness', 120, 0, 2)
                 .effect('alexsmobs:lava_vision', 75, 1, 1)
-                .
         })
         .maxStackSize(16)
 })
