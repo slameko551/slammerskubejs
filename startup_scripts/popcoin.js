@@ -5,7 +5,7 @@ onEvent('item.registry', event => {
     event.create('popcorn')
         .displayName('Popcorn')
         .tooltip("Mmm popcorn.")
-        .useAnimation('eat' (food))
+        .useAnimation("eat" (food))
         .group('misc')
 
     event.create('copper_popcoin')
