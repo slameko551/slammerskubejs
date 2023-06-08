@@ -1,3 +1,5 @@
+console.info('Loaded the popcoin.js for Popcoins')
+
 //Adding popcoin types
 onEvent('item.registry', event => {
     event.create('popcorn')
