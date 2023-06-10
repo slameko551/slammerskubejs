@@ -22,11 +22,25 @@ onEvent('item.registry', event => {
 
 
     event.create('silver_popcoin')
-        .displayName('§7Silver Popcoin')
+        .displayName('§7Forgotten Silver Popcoin')
         .tooltip("")
-        .tooltip("§7Your average valuabe popcoin.")
+        .tooltip("§7It was scrapped due to Brass Popcoin added.")
+        .tooltip("§7But Silver popcoin is hella rare..")
         .group('misc')
-//test
+
+    event.create('brass_popcoin')
+        .displayName('§6Brass Popcoin')
+        .tooltip("")
+        .tooltip("§6An upgraded and valuable popcoin.")
+        .tooltip("§7Mighty dwarfs says it taste like red sugar!")
+        .group('misc')
+        .food(food => {
+            food
+                .hunger(3)
+                .saturation(2)
+                .effect('speed', 600, 1, 1)
+                .effect('haste', 400, 2, 1)
+        })
 
     event.create('golden_popcoin')
         .maxStackSize(32)
@@ -42,9 +56,24 @@ onEvent('item.registry', event => {
                 .effect('farmersdelight:nourishment', 2600, 1 ,1)
                 .effect('health_boost', 1200 , 1 ,4)
                 .effect('regeneration', 360, 2, 1)
+                .effect('alexsmobs:oiled', 7000, 3, 1) // https://www.youtube.com/watch?v=xURlT84IpcY
                 .alwaysEdible()
         })
 
+    event.create('incomplete_manyullyn_popcoin')
+        .unstackable()
+        .displayName('§5Incomplete Manyullyn Popcoin')
+        .tooltip("")
+        .tooltip("§8You need to complete this popcoin upgrade")
+        .tooltip("§8for making Manyullyn Popcoin.")
+        .group('misc')
+
+    event.create('unpressed_manyullyn_popcoin')
+        .unstackable()
+        .displayName('§5Unpressed Manyullyn Popcoin')
+        .tooltip("")
+        .tooltip("§8Use Mechanical Press to finish your manyullyn popcoin.")
+        .group('misc')
 
     event.create('manyullyn_popcoin')
          .maxStackSize(16)

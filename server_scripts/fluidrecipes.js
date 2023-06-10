@@ -107,8 +107,9 @@ onEvent('recipes', event => {
     //          Required molten 1 /   amount   /  required motlen 2     / amount / output molten  / output amount / temp
     reg2Alloy('tconstruct:molten_gold', 810, 'tconstruct:molten_zinc', 360, 'kubejs:molten_hardened_gold', 450 , 850)
     //Molten Hard Manyullyn
-    reg3Alloy('tconstruct:molten_manyullyn', 180, 'kube')  //Gonna update that soon, but not now
+    reg3Alloy('tconstruct:molten_manyullyn', 180, 'forge:molten_hardened_gold', 450, 'tconstruct:molten_emerald', 200, 'kubejs:molten_hardened_manyullyn', 180, 1150)
 
     //this is for tablecast function
-    tableItemCast("kubejs:silver_popcoin", true, "forge:molten_hardened_gold", 90, "kubejs:golden_popcoin", 600 / 8)
+    tableItemCast("kubejs:brass_popcoin", true, "forge:molten_hardened_gold", 90, "kubejs:golden_popcoin", 600 / 8)
+    tableItemCast("kubejs:golden_popcoin", true, "forge:molten_hardened_manyullyn", 90, "kubejs:incomplete_manyullyn_popcoin", 1200 / 8)
 })
