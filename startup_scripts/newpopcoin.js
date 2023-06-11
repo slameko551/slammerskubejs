@@ -138,25 +138,17 @@ onEvent('item.registry', event => {
                 {name: 'alexsmobs:knockback_resistance', duration: 95, amplifier: 1, probability: 1 }
             ]
         }
-    },
-    // Powerful popcorns
-    {
-        name: 'blazing_popcorn',
-        maxStackSize: '16',
-        displayName: 'Blazing Popcorn',
-        tooltip: [
-            "",
-            "§7Really spicy and hot popcorn",
-            "§7§oRecommended to eat during swimming in water."],
-        food: {
-            hunger: 3,
-            saturation: 2,
-            effects: [
-                //{name: ''}
-            ]
-        }
+    }, {
+        name: 'mudded_seed',
+        displayName: 'Mudded Seed',
+    }, {
+        name: 'popcorn_kernel',
+        displayName: 'Popcorn Kernel',
+        tooltips: [
+        "",
+        "The main source of popcorns!"
+        ]
     }
-
     ];
 
     items.forEach(item => createItem(event, item));

@@ -18,7 +18,10 @@ onEvent('recipes', event => {
 
 	    //mixing section
 	        //copper popcoin
-	    event.recipes.create.mixing('kubejs:copper_popcoin', ['12x minecraft:copper_ingot', 'kubejs:popcorn'])
+	    event.recipes.create.mixing('kubejs:copper_popcoin', ['4x minecraft:copper_ingot', '8x kubejs:popcorn'])
             //brass popcoin
-        event.recipes.create.mixing('kubejs:brass_popcoin', ['8x create:brass_ingot', '2x create:zinc_ingot', 'kubejs:copper_popcoin'] ).heated()
+        event.recipes.create.mixing('kubejs:brass_popcoin', ['8x create:brass_ingot', '2x create:zinc_ingot', '12x kubejs:copper_popcoin'] ).heated()
+        // for muddedseeds
+        event.recipes.create.splashing('kubejs:popcorn_kernel', 'kubejs:mudded_seed')
+        event.recipes.create.sandpaperPolishing('kubejs:popcorn_kernel', 'kubejs:mudded_seed')
 	})
