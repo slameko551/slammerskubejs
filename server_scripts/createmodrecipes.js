@@ -2,6 +2,8 @@
 
 onEvent('recipes', event => {
 
+    event.remove({id: 'create:splashing/sand'})
+
     //this whole madness is just for making manyullyn in deployers wow.
 	event.recipes.createSequencedAssembly([
 		Item.of('kubejs:unpressed_manyullyn_popcoin').withChance(150.0), // this is the item that will appear in JEI as the result
@@ -18,11 +20,13 @@ onEvent('recipes', event => {
 
 	    //mixing section
 	        //copper popcoin
-	    event.recipes.create.mixing('kubejs:copper_popcoin', ['4x minecraft:copper_ingot', '8x kubejs:popcorn'])
+	    event.recipes.create.mixing('kubejs:copper_popcoin', ['4x minecraft:copper_ingot', '3x kubejs:popcorn'])
             //brass popcoin
-        event.recipes.create.mixing('kubejs:brass_popcoin', ['8x create:brass_ingot', '2x create:zinc_ingot', '12x kubejs:copper_popcoin'] ).heated()
+        event.recipes.create.mixing('kubejs:brass_popcoin', ['8x create:brass_ingot', '2x create:zinc_ingot', '6x kubejs:copper_popcoin'] ).heated()
         // for muddedseeds
-        event.recipes.create.splashing([Item.of("kubejs:salt").withChance(0.30)], 'minecraft:sand')
+        event.recipes.create.splashing([Item.of("kubejs:salt").withChance(0.30), Item.of("minecraft:clay_ball").withChance(0.25)], 'minecraft:sand')
         event.recipes.create.splashing([Item.of("kubejs:popcorn_kernel").withChance(0.6), Item.of('minecraft:wheat_seeds').withChance(0.3)], 'kubejs:mudded_seed')
         event.recipes.create.sandpaperPolishing('kubejs:popcorn_kernel', 'kubejs:mudded_seed')
+
+        event.recipes.create.mixing('kubejs:popcorn', ['kubejs:popcorn_kernel', '2x kubejs:salt'])
 	})
