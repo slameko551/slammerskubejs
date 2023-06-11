@@ -28,7 +28,7 @@ const createItem = (event, config) => {
 
             if (config.food.effects) {
                 config.food.effects.forEach(effect => 
-                    food.effect(effect.name, effect.duration * 20, effect.amplifier)
+                    food.effect(effect.name, effect.duration * 20, effect.amplifier, effect.probability)
                 );
             }
         });
@@ -70,8 +70,8 @@ onEvent('item.registry', event => {
             hunger: 3,
             saturation: 2,
             effects: [
-                {name: 'speed', duration: 600, amplifier: 1},
-                {name: 'haste', duration: 400, amplifier: 2}
+                {name: 'speed', duration: 600, amplifier: 1, probability: 1},
+                {name: 'haste', duration: 400, amplifier: 2, probability: 1}
             ]
         }
     }, {
@@ -88,10 +88,10 @@ onEvent('item.registry', event => {
             saturation: 4,
             alwaysEdible: true,
             effects: [
-                {name: 'farmersdelight:nourishment', duration: 2600, amplifier: 1},
-                {name: 'health_boost', duration: 1200, amplifier: 1},
-                {name: 'regeneration', duration: 360, amplifier: 2},
-                {name: 'alexsmobs:oiled', duration: 7000, amplifier: 3}
+                {name: 'farmersdelight:nourishment', duration: 2600, amplifier: 1, probability: 1},
+                {name: 'health_boost', duration: 1200, amplifier: 1, probability: 4},
+                {name: 'regeneration', duration: 360, amplifier: 2, probability: 1},
+                {name: 'alexsmobs:oiled', duration: 7000, amplifier: 3, probability: 1}
             ]
         }
     }, {
@@ -126,16 +126,16 @@ onEvent('item.registry', event => {
             saturation: 5,
             alwaysEdible: true,
             effects: [
-                {name: 'alexsmobs:earthquake', duration: 3, amplifier: 1},
-                {name: 'slowness', duration: 120 , amplifier: 3},
-                {name: 'alexsmobs:lava_vision', duration: 110, amplifier: 1},
-                {name: 'farmersdelight:nourishment', duration: 160, amplifier: 1},
-                {name: 'health_boost', duration: 120, amplifier: 3},
-                {name: 'regeneration', duration: 75, amplifier: 3},
-                {name: 'resistance', duration: 95, amplifier: 2},
-                {name: 'strength', duration: 60, amplifier: 1},
-                {name: 'fire_resistance', duration: 120, amplifier: 1},
-                {name: 'alexsmobs:knockback_resistance', duration: 95, amplifier: 1 }
+                {name: 'alexsmobs:earthquake', duration: 3, amplifier: 1, probability: 1},
+                {name: 'slowness', duration: 120 , amplifier: 3, probability: 1},
+                {name: 'alexsmobs:lava_vision', duration: 110, amplifier: 1, probability: 1},
+                {name: 'farmersdelight:nourishment', duration: 160, amplifier: 1, probability: 1},
+                {name: 'health_boost', duration: 120, amplifier: 3, probability: 1},
+                {name: 'regeneration', duration: 75, amplifier: 3, probability: 1},
+                {name: 'resistance', duration: 95, amplifier: 2, probability: 1},
+                {name: 'strength', duration: 60, amplifier: 1, probability: 1},
+                {name: 'fire_resistance', duration: 120, amplifier: 1, probability: 1},
+                {name: 'alexsmobs:knockback_resistance', duration: 95, amplifier: 1, probability: 1 }
             ]
         }
     }, {
