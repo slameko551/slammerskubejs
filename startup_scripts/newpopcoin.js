@@ -148,6 +148,9 @@ onEvent('item.registry', event => {
         "",
         "The main source of popcorns!"
         ]
+    }, {
+        name: 'salt',
+        displayName: 'Salt',
     }
     ];
 
