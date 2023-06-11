@@ -146,7 +146,7 @@ onEvent('item.registry', event => {
         displayName: 'Popcorn Kernel',
         tooltips: [
         "",
-        "The main source of popcorns!"
+        "The main source of popcorn!"
         ]
     }, {
         name: 'salt',
