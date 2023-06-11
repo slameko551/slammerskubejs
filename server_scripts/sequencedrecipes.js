@@ -12,8 +12,6 @@ onEvent('recipes', event => {
 		event.recipes.createDeploying('kubejs:incomplete_manyullyn_popcoin',['kubejs:incomplete_manyullyn_popcoin','minecraft:slime_ball'])
 	]).transitionalItem('kubejs:incomplete_manyullyn_popcoin').loops(2)
 
-
-
         //pressing section
 	    event.recipes.create.pressing('kubejs:manyullyn_popcoin', 'kubejs:unpressed_manyullyn_popcoin')
 

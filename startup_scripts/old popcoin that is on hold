@@ -17,9 +17,8 @@ onEvent('item.registry', event => {
     event.create('copper_popcoin')
         .displayName('§cCopper Popcoin')
         .tooltip("")
-        .tooltip("§cNot so valuable popcoin.")
+        .tooltip("§7Low valuable §cpopcoin.")
         .group('misc')
-
 
     event.create('silver_popcoin')
         .displayName('§7Forgotten Silver Popcoin')
@@ -31,8 +30,8 @@ onEvent('item.registry', event => {
     event.create('brass_popcoin')
         .displayName('§6Brass Popcoin')
         .tooltip("")
-        .tooltip("§6An upgraded and valuable popcoin.")
-        .tooltip("§7Mighty dwarfs says it taste like red sugar!")
+        .tooltip("§7An upgraded and valuable §6popcoin.")
+        .tooltip("§8§oMighty dwarf says it taste like red sugar!")
         .group('misc')
         .food(food => {
             food
@@ -46,8 +45,8 @@ onEvent('item.registry', event => {
         .maxStackSize(32)
         .displayName('§6Golden Popcoin')
         .tooltip("")
-        .tooltip("§6Slightly better than average popcoin.")
-        .tooltip("§7§oThat golden butter sure tastes really good..")
+        .tooltip("§7Slightly better than average §6popcoin.")
+        .tooltip("§8§oThat golden butter sure tastes really good..")
         .group('misc')
         .food(food => {
             food
@@ -98,4 +97,8 @@ onEvent('item.registry', event => {
                 .effect('strength', 1000, 1, 1)
                 .effect('fire_resistance', 2000, 1)
         })
+
+    // Custom POWERUP popcoins here
+    event.create('blaze_popcoin')
+
 })
