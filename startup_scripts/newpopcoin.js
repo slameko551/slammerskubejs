@@ -139,8 +139,14 @@ onEvent('item.registry', event => {
             ]
         }
     }, {
-        name: 'mudded_seed',
-        displayName: 'Mudded Seed'
+        name: 'dirt_piece',
+        displayName: 'Dirt Piece',
+        tooltips : [
+        "",
+        "Sometimes you catch up some",
+        "dirt pieces on your crops.",
+        "§2They are rare yet they hold some treasures!"
+        ]
     }, {
         name: 'popcorn_kernel',
         displayName: 'Popcorn Kernel',

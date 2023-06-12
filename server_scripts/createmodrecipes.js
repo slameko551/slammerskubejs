@@ -25,8 +25,8 @@ onEvent('recipes', event => {
         event.recipes.create.mixing('kubejs:brass_popcoin', ['8x create:brass_ingot', '2x create:zinc_ingot', '6x kubejs:copper_popcoin'] ).heated()
         // for muddedseeds
         event.recipes.create.splashing([Item.of("kubejs:salt").withChance(0.30), Item.of("minecraft:clay_ball").withChance(0.25)], 'minecraft:sand')
-        event.recipes.create.splashing([Item.of("kubejs:popcorn_kernel").withChance(0.6), Item.of('minecraft:wheat_seeds').withChance(0.3)], 'kubejs:mudded_seed')
-        event.recipes.create.sandpaperPolishing('kubejs:popcorn_kernel', 'kubejs:mudded_seed')
+        event.recipes.create.splashing([Item.of("kubejs:popcorn_kernel").withChance(0.6), Item.of('minecraft:wheat_seeds').withChance(0.3)], 'kubejs:dirt_piece')
+        event.recipes.create.sandpaperPolishing('kubejs:popcorn_kernel', 'kubejs:dirt_piece')
 
         event.recipes.create.mixing('kubejs:popcorn', ['kubejs:popcorn_kernel', '2x kubejs:salt'])
 	})
