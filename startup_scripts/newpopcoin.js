@@ -115,7 +115,7 @@ onEvent('item.registry', event => {
     }, {
         name: 'manyullyn_popcoin',
         maxStackSize: 16,
-        displayName: '§5Manyullyn Popcoin', //
+        displayName: '§5Manyullyn Popcoin',
         tooltips: [
             "",
             "§7Highly valuable §5popcoin.",
