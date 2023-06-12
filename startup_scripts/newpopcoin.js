@@ -70,8 +70,8 @@ onEvent('item.registry', event => {
             hunger: 3,
             saturation: 2,
             effects: [
-                {name: 'speed', duration: 600, amplifier: 1, probability: 1},
-                {name: 'haste', duration: 400, amplifier: 2, probability: 1}
+                {name: 'speed', duration: 30, amplifier: 1, probability: 1},
+                {name: 'haste', duration: 25, amplifier: 2, probability: 1}
             ]
         }
     }, {
@@ -88,10 +88,10 @@ onEvent('item.registry', event => {
             saturation: 4,
             alwaysEdible: true,
             effects: [
-                {name: 'farmersdelight:nourishment', duration: 2600, amplifier: 1, probability: 1},
-                {name: 'health_boost', duration: 1200, amplifier: 1, probability: 4},
-                {name: 'regeneration', duration: 360, amplifier: 2, probability: 1},
-                {name: 'alexsmobs:oiled', duration: 7000, amplifier: 3, probability: 1}
+                {name: 'farmersdelight:nourishment', duration: 120, amplifier: 1, probability: 1},
+                {name: 'health_boost', duration: 75, amplifier: 1, probability: 4},
+                {name: 'regeneration', duration: 45, amplifier: 2, probability: 1},
+                {name: 'alexsmobs:oiled', duration: 150, amplifier: 3, probability: 1}
             ]
         }
     }, {
